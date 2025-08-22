@@ -1,0 +1,41 @@
+@reference "../app.css";
+
+/* define base */
+
+/* Typography */
+.heading-hero {
+  @apply text-4xl sm:text-6xl font-semibold tracking-tight;
+}
+
+.copy-lg {
+  @apply text-lg sm:text-xl text-white/70;
+}
+
+/* Buttons */
+.btn {
+  @apply inline-flex items-center px-6 py-3 rounded-lg font-medium transition-all duration-300;
+}
+
+.btn-primary {
+  @apply bg-white text-black hover:bg-white/90 transform hover:scale-105;
+}
+
+.btn-outline {
+  @apply border border-white/20 text-white hover:border-white/40 hover:bg-white/10;
+}
+
+/* Cards */
+.card {
+  @apply bg-white/5 backdrop-blur-sm rounded-2xl border border-white/10;
+}
+
+/* Utility classes */
+.glass {
+  @apply bg-white/10 backdrop-blur-sm border border-white/20;
+}
+
+.hover-lift {
+  @apply transition-transform duration-300 hover:scale-105;
+}
+
+

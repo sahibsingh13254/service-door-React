@@ -1,0 +1,4 @@
+@reference "../app.css";
+html, body { height: 100%; }
+body { @apply bg-black text-white antialiased; }
+.container-page { @apply mx-auto max-w-[1200px] px-6; }
