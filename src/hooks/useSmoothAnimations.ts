@@ -1,12 +1,18 @@
-import { useEffect, useRef } from "react";
+import { useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
 export function useSmoothAnimations() {
-  // Disabled smooth scroll - using normal scrolling
-  return null;
+  useEffect(() => {
+    // Initialize smooth animations
+    const ctx = gsap.context(() => {
+      // Add your animation logic here
+    });
+
+    return () => ctx.revert();
+  }, []);
 }
 
 // Animation presets for Apple-like effects
